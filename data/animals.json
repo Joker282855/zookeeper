@@ -118,6 +118,19 @@
         "loving"
       ],
       "id": "11"
+    },
+    {
+      "name": "Booky",
+      "species": "Insect",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry",
+        "zany",
+        "anxious",
+        "loving",
+        "goofy"
+      ],
+      "id": "12"
     }
   ]
 }
