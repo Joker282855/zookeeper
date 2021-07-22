@@ -131,6 +131,16 @@
         "goofy"
       ],
       "id": "12"
+    },
+    {
+      "name": "Robby",
+      "species": "Kangaroo",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "zany",
+        "anxious"
+      ],
+      "id": "13"
     }
   ]
 }

@@ -10,10 +10,10 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
-app.use('/api', apiRoutes);
-app.use('/', htmlRoutes);
 // bringing the code over from the CSS and JS files
 app.use(express.static('public'));
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 function filterByQuery(query, animalsArray) {
     let personalityTraitsArray = [];
