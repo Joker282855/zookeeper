@@ -7,6 +7,8 @@ const {
 } = require("../lib/animals.js");
 const { animals } = require("../data/animals");
 
+jest.mock('fs');
+
 test("creates an animal object", () => {
     const animal = createNewAnimal(
         { name: "Darlene", id: "jhgdja3ng2"},
@@ -14,7 +16,7 @@ test("creates an animal object", () => {
     );
 
     expect(animal.name).toBe("Darlene");
-    expect(animal.id).toBe("jhdja3ng2");
+    expect(animal.id).toBe("jhgdja3ng2");
 });
 
 test("filters by query", () => {
@@ -22,15 +24,22 @@ test("filters by query", () => {
         {
             id: "3",
             name: "Erica",
-            specieis: "gorilla",
+            species: "gorilla",
             diet: "omnivore",
             personalityTraits: ["quirky", "rash"],
         },
+        {
+            id: "4",
+            name: "Noel",
+            species: "bear",
+            diet: "carnivore",
+            personalityTraits: ["impish", "sassy", "brave"],
+        },
     ];
 
-    const updateAnimals = filterByQuery({ species: "gorilla" }, startingAnimals);
+    const updatedAnimals = filterByQuery({ species: "gorilla" }, startingAnimals);
 
-    expect(updateAnimals.length).toEqual(1);
+    expect(updatedAnimals.length).toEqual(1);
 });
 
 test("finds by id", () => {

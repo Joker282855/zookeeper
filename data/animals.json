@@ -108,39 +108,6 @@
         "loving"
       ],
       "id": "10"
-    },
-    {
-      "name": "Booky",
-      "species": "Panda",
-      "diet": "herbivore",
-      "personalityTraits": [
-        "zany",
-        "loving"
-      ],
-      "id": "11"
-    },
-    {
-      "name": "Booky",
-      "species": "Insect",
-      "diet": "herbivore",
-      "personalityTraits": [
-        "hungry",
-        "zany",
-        "anxious",
-        "loving",
-        "goofy"
-      ],
-      "id": "12"
-    },
-    {
-      "name": "Robby",
-      "species": "Kangaroo",
-      "diet": "herbivore",
-      "personalityTraits": [
-        "zany",
-        "anxious"
-      ],
-      "id": "13"
     }
   ]
 }
